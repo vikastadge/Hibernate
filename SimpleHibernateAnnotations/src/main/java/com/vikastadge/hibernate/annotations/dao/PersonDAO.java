@@ -12,6 +12,8 @@ public class PersonDAO {
         Transaction transaction = session.beginTransaction();
         session.save(personEntity);
         transaction.commit();
+        System.out.println("Identifier :-"+session.getIdentifier(personEntity));
         HibernateUtil.shutdown();
+
     }
 }

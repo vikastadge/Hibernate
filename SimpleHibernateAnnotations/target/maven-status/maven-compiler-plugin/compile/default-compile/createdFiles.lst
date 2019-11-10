@@ -1,5 +1,0 @@
-com\vikastadge\hibernate\xml\service\PersonService.class
-com\vikastadge\hibernate\xml\dao\PersonDAO.class
-com\vikastadge\hibernate\xml\dao\entity\PersonEntity.class
-com\vikastadge\hibernate\xml\util\HibernateUtil.class
-com\vikastadge\hibernate\xml\App.class
