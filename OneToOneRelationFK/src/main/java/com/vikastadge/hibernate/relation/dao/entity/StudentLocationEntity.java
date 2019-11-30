@@ -12,16 +12,21 @@ public class StudentLocationEntity implements Serializable {
     @Id
     @Column(name="student_location_id")
     private Integer studentLocationId;
-    @OneToOne(mappedBy = "studentLocationEntity", cascade = CascadeType.ALL)
-    private StudentEntity studentEntity;
+
     @Column(name="street")
     private String street;
+
     @Column(name="city")
     private String city;
+
     @Column(name="state")
     private String state;
+
     @Column(name="zipcode")
     private String zipcode;
+
+    @OneToOne(mappedBy = "studentLocationEntity", cascade = CascadeType.ALL)
+    private StudentEntity studentEntity;
 
     public StudentLocationEntity(String street, String city, String state, String zipcode) {
         this.street = street;
@@ -38,8 +43,6 @@ public class StudentLocationEntity implements Serializable {
         this.studentLocationId = studentLocationId;
     }
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="STUDENT_ID")
     public StudentEntity getStudentEntity() {
         return studentEntity;
     }
@@ -48,7 +51,6 @@ public class StudentLocationEntity implements Serializable {
         this.studentEntity = studentEntity;
     }
 
-    @Column(name="street")
     public String getStreet() {
         return street;
     }
@@ -56,7 +58,7 @@ public class StudentLocationEntity implements Serializable {
     public void setStreet(String street) {
         this.street = street;
     }
-    @Column(name="city")
+
     public String getCity() {
         return city;
     }
@@ -64,7 +66,7 @@ public class StudentLocationEntity implements Serializable {
     public void setCity(String city) {
         this.city = city;
     }
-    @Column(name="state")
+
     public String getState() {
         return state;
     }

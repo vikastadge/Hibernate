@@ -7,7 +7,6 @@ import java.io.Serializable;
 @Table(name="student", catalog = "DBTest")
 public class StudentEntity implements Serializable {
     @Id
-    //@GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="student_id")
     private Integer studentId;
 
@@ -34,8 +33,6 @@ public class StudentEntity implements Serializable {
         this.studentName = studentName;
     }
 
-    //@OneToOne(fetch=FetchType.LAZY, mappedBy = "studentEntity", cascade = CascadeType.ALL)
-    //@JoinColumn(name="student_id")
     public StudentLocationEntity getStudentLocationEntity() {
         return studentLocationEntity;
     }
