@@ -1,0 +1,1 @@
+This example demonstrates one to one mapping with foreign key of child in parent table.
