@@ -1,3 +1,10 @@
+Different types of identifier generation strategy
+GenerationType.AUTO
+GenerationType.IDENTITY
+GenerationType.SEQUENCE
+GenerationType.TABLE
+
+
 Drop existing table and create new table:
 DROP TABLE Person;
 CREATE TABLE Person (

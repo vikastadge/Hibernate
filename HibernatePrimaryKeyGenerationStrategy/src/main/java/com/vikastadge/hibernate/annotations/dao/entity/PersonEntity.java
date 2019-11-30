@@ -17,6 +17,24 @@ public class PersonEntity {
             allocationSize = 1,
             initialValue = 0
             )
+    /*@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)*/
+
+    /*@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)*/
+
+    /*@Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "person_id_generator")
+    @GenericGenerator(
+            name = "person_id_generator",
+            strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator",
+            parameters = {
+                    @org.hibernate.annotations.Parameter(name = "person_id_seq", value = "person_id_seq"),
+                    @org.hibernate.annotations.Parameter(name = "initial_value", value = "1"),
+                    @org.hibernate.annotations.Parameter(name = "increment_size", value = "1")
+            }
+    )*/
+
     @Column(name="id")
     private int id;
 
