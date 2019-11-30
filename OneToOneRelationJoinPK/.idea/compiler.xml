@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SmpleHibernateXml" />
+        <module name="One-To-One-Relation" />
+        <module name="simple-hibernate-xml" />
+        <module name="Hibernate-Data-Load" />
+        <module name="Hibernate-Data-Update" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
